@@ -18,11 +18,11 @@ hive> CREATE TEMPORARY FUNCTION DateConverter  AS 'com.ibm.logic.HiveUDF';
 ```
 hive> select DateConverter("160627","yyMMdd");
 ```
-return `2016-06-27`
+=> `2016-06-27`
 
 ```
 hive> select DateConverter('062716','MMddyy');
 ```
-return `2016-06-27`
+=> `2016-06-27`
 
 
